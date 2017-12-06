@@ -11,6 +11,7 @@ void init(struct stack_handle* s)
 {
 	s->top=0;
     	s->dane = (int *)malloc(stacksize * sizeof(int));
+	assert(s->dane);
 }
 
 void finalize(struct stack_handle* s)
